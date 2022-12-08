@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Atv form</title>
+  </head>
+  <body>
+    <!-- .......................................................................começo do container principal -->
+    <section class="container">
+      <!-- .....................................................................começo da div cadastro -->
+      <div class="cadastro">
+        <h1>Realize seu cadastro</h1>
+        <h2>
+          Preencha os campos abaixos <br />
+          e realize seu cadastro
+        </h2>
+        <form id="form_cadastro" action="#">
+          <label for="nome_cadastro">Digite seu nome</label>
+          <input
+            type="text"
+            name="nome_cadastro"
+            id="nome_cadastro"
+            form="form_cadastro"
+            required
+          />
+
+          <label for="sobrenome_cadrasto">Digite seu sobrenome</label>
+          <input
+            type="text"
+            name="sobrenome_cadrasto"
+            id="sobrenome_cadrasto"
+            form="form_cadastro"
+            required
+          />
+
+          <label for="email_cadastro">Digite seu email</label>
+          <input
+            type="email"
+            name="email_cadastro"
+            id="email_cadastro"
+            form="form_cadastro"
+            required
+          />
+
+          <label for="senha_cadastro">digite uma senha</label>
+          <input
+            type="password"
+            name="senha_cadastro"
+            id="senha_cadastro"
+            form="form_cadastro"
+            required
+          />
+        </form>
+        <button type="submit" form="form_cadastro">Cadastrar</button>
+      </div>
+      <!-- .......................................................................fim da div cadastro -->
+
+      <!-- .......................................................................começo da div Login -->
+      <div class="login">
+        <h1>Já tem cadrasto?</h1>
+        <h2>Use suas credenciais</h2>
+
+        <form id="form_login" action="">
+          <label for="email_login">Seu login (email)</label>
+          <input
+            type="email"
+            name="email_login"
+            id="email_login"
+            form="form_login"
+            required
+          />
+
+          <label for="">Sua senha</label>
+          <input
+            type="password"
+            name="senha_login"
+            id="senha_login"
+            form="form_login"
+            required
+          />
+
+          <div class="form_checkbox">
+            <input
+              id="input_checkbox"
+              type="checkbox"
+              id="lembrar_login"
+              name="lembrar_login"
+              form="form_login"
+            />
+            <label for="">Lembrar de mim</label>
+          </div>
+
+          <button type="submit" form="form_login">Fazer login</button>
+        </form>
+      </div>
+      <!-- ....................................................................... fim da div login -->
+    </section>
+    <!--  .......................................................................fim do container principal -->
+  </body>
+</html>
