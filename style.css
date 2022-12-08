@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-family: "Inter", sans-serif;
+}
+body {
+  background-color: #d3d0df;
+}
+
+h1 {
+  font-size: 30px;
+  color: #7e56d8;
+  margin-bottom: 22px;
+}
+h2 {
+  font-size: 15px;
+  color: #121b2a;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: #d3d0df;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+  justify-content: center;
+}
+.cadastro {
+  width: 500px;
+  height: 650px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#form_cadastro {
+  display: flex;
+  flex-direction: column;
+}
+.login {
+  width: 500px;
+  height: 650px;
+  background-color: #f3f5f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#form_login {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 20px;
+  width: 390px;
+  height: 55px;
+  border: solid 1px #bcbcce;
+  font-size: 25px;
+  color: #7e56d8;
+}
+label {
+  color: #bcbcce;
+  margin-bottom: 10px;
+}
+.form_checkbox {
+  display: flex;
+  justify-content: start;
+}
+#input_checkbox {
+  height: 17px;
+  width: 17px;
+  margin-right: 8px;
+}
+
+button {
+  width: 390px;
+  height: 55px;
+  background-color: #7e56d8;
+  color: white;
+  font-size: 16px;
+  border-style: none;
+  cursor: pointer;
+}
+
+@media (max-width: 780px) {
+  .container {
+    width: 750px;
+  }
+  .cadastro {
+    width: 750px;
+    height: 750px;
+    border-bottom: solid 1px #d3d0df;
+    border-width: 5px 350px;
+  }
+  .login {
+    width: 750px;
+    height: 750px;
+  }
+}
